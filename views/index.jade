@@ -1,5 +1,10 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+html(ng-app="upApp" ng-controller="MainCtrl")
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="/bower/angularjs/angular.js")
+    script(src="/app/up-app.js")
+    link(rel="shortcut icon" type="image/x-icon" href="{{faviconUrl}}")
+  body
+    p Internet is up? {{isUp}}
