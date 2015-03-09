@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="upApp" ng-controller="MainCtrl" manifest="up.appcache">
+  <head>
+    <title>webup.info</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/bower/angularjs/angular.js"></script>
+    <script src="/app/up-app.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="{{faviconUrl}}">
+  </head>
+  <body>
+    <p>Internet is up? {{isUp}}</p>
+    <img ng-src="{{faviconUrl}}" />
+    <p>{{faviconUrl}}</p>
+    <p>Took:  {{tick}}ms</p>
+    <p>Last:  {{lastTick}}ms</p>
+  </body>
+</html>
