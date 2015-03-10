@@ -3,11 +3,17 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res) {
-  //var delay = ~~(Math.random()*5000);
 
-  //setTimeout(function(){
-    res.send('');
-  //}, delay);
+  if(false) {
+    var delay = 5000 + ~~(Math.random() * 5000);
+
+    setTimeout(function () {
+      res.send('');
+    }, delay);
+    return;
+  }
+
+  res.send('');
 
 });
 

@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-#rev...
+#rev....
 
 NETWORK:
 *
@@ -12,6 +12,11 @@ images/2.png
 images/3.png
 images/4.png
 images/5.png
+images/1.ico
+images/2.ico
+images/3.ico
+images/4.ico
+images/5.ico
 images/up-favicon.ico
 images/down-favicon.ico
 stylesheets/style.css

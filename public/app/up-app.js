@@ -9,15 +9,15 @@ app.controller('MainCtrl', function($scope, $timeout, $interval, $http){
   function tk(){
     $scope.tick += 100;
     if($scope.lastTick > 6000 || $scope.tick > 6000) {
-      $scope.faviconUrl = '/images/5.png';
+      $scope.faviconUrl = '/images/5.ico';
     } else if($scope.lastTick > 4000 || $scope.tick > 4000) {
-      $scope.faviconUrl = '/images/4.png';
+      $scope.faviconUrl = '/images/4.ico';
     } else if($scope.lastTick > 2000 || $scope.tick > 2000) {
-      $scope.faviconUrl = '/images/3.png';
+      $scope.faviconUrl = '/images/3.ico';
     } else if($scope.lastTick > 1000 || $scope.tick > 1000) {
-      $scope.faviconUrl = '/images/2.png';
+      $scope.faviconUrl = '/images/2.ico';
     } else {
-      $scope.faviconUrl = '/images/1.png';
+      $scope.faviconUrl = '/images/1.ico';
     }
 
   };
