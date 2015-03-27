@@ -21,6 +21,15 @@ app.use('/bower', express.static(path.join(__dirname, 'bower_components')));
 
 app.use('/up', require('./routes/up'));
 
+app.get('/r', function(req, res){
+  var fiveSeconds = Math.floor(new Date().getTime() / 5000);
+  if(req.query.r != fiveSeconds){
+    res.redirect('?r='+fiveSeconds);
+  } else {
+    res.send('Safe');
+  }
+});
+
 app.use(emojiFavicon('smiley'));
 
 // catch 404 and forward to error handler
