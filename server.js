@@ -8,7 +8,7 @@ var emojiFavicon = require('emoji-favicon');
 
 var app = express();
 
-var port = process.env.PORT || 5656;
+var port = process.env.PORT || 12003;
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
